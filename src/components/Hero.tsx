@@ -5,7 +5,7 @@ import { Copy, Check, Mail, Download } from 'lucide-react';
 export default function Hero() {
   const [copied, setCopied] = useState(false);
   const [imgError, setImgError] = useState(false);
-  const emailAddress = 'pratikhirave01@gmail.com';
+  const emailAddress = 'pratikhirave59@gmail.com';
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(emailAddress);
@@ -66,8 +66,8 @@ export default function Hero() {
 
               {/* Resume Download button */}
               <a
-                href="/Pratik_Hirave_Resume.pdf"
-                download="Pratik_Hirave_Resume.pdf"
+                href="/pratik hirave resume (1).pdf"
+                download="pratik hirave resume (1).pdf"
                 className="flex items-center gap-2 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 px-5 py-3 rounded-2xl shadow-md transition-all hover:-translate-y-0.5 active:scale-[0.98]"
               >
                 <Download className="w-3.5 h-3.5" />
@@ -102,7 +102,7 @@ export default function Hero() {
               <div className="w-full h-full rounded-full overflow-hidden bg-slate-100">
                 {!imgError ? (
                   <img
-                    src="/pratik.jpg"
+                    src="/Pratik.jpeg"
                     alt="Pratik Hirave — Data Analyst"
                     className="w-full h-full object-cover object-top"
                     onError={() => setImgError(true)}

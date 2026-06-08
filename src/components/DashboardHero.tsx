@@ -394,7 +394,7 @@ export default function DashboardHero() {
               </div>
               <div className="border-t border-slate-100 pt-2 mt-4 flex items-center justify-between text-[10px] text-slate-400 font-medium">
                 <span>Model: Blinkit Sales v2</span>
-                <span className="text-orange-500 font-semibold cursor-pointer hover:underline">View Project Report &rarr;</span>
+                <a href="#projects" className="text-orange-500 font-semibold cursor-pointer hover:underline">View Project Report &rarr;</a>
               </div>
             </div>
 

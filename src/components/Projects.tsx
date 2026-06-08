@@ -28,27 +28,26 @@ export default function Projects() {
     {
       id: 'blinkit',
       title: 'Blinkit Sales Analysis Dashboard',
-      subtitle: 'Sales Channel Performance & KPI Reporting',
-      description: 'Developed a comprehensive analytics solution using Power BI and Excel to track, clean, and visualize key sales performance metrics for Blinkit, highlighting core trends and outlet efficiency.',
-      techStack: ['Excel', 'Power BI', 'Power Query', 'Data Cleaning', 'KPI Analysis'],
+      subtitle: 'Sales Channel Performance (As seen in Resume)',
+      description: 'Developed an interactive sales analysis dashboard for Blinkit using Excel and Power BI to analyze sales performance and customer trends.',
+      techStack: ['Excel', 'Power BI', 'Power Query', 'Data Visualization'],
       bullets: [
-        'Cleaned and transformed 10,000+ rows of raw transactional data using Power Query functions.',
-        'Analyzed core KPIs including total sales volume, outlet sizes, regional distributions, and customer rating averages.',
-        'Identified top sales categories, showing high demand segments and outlet growth patterns.',
-        'Created a dynamic, filterable reporting dashboard that highlights outlet performance by tier sizes.'
+        'Cleaned and transformed raw sales data using Excel functions and Power Query for accurate reporting and visualization.',
+        'Analyzed KPIs such as total sales, outlet performance, item categories, customer ratings, and regional sales distribution.',
+        'Identified top-performing products and sales patterns through data-driven analysis.'
       ]
     },
     {
       id: 'customer',
       title: 'Customer Behaviour Analysis Project',
-      subtitle: 'Customer Segmentation & Trend Analytics',
-      description: 'Conducted exploratory data analysis and database clustering using Python and SQL to segment purchasing behaviors, identify demographic patterns, and present data-driven marketing suggestions.',
-      techStack: ['Python', 'Pandas', 'SQL', 'MySQL', 'Jupyter Notebook', 'Power BI'],
+      subtitle: 'Customer Segmentation (As seen in Resume)',
+      description: 'Analyzed customer purchasing behavior using real-world datasets to identify trends, customer preferences, and business insights.',
+      techStack: ['Jupyter Notebook', 'Python', 'Pandas', 'SQL', 'Power BI', 'Excel'],
       bullets: [
-        'Preprocessed, imputed missing figures, and ran exploratory statistics on datasets in Jupyter Notebook.',
-        'Structured MySQL queries utilizing aggregate windows and joins to extract purchase details.',
-        'Modeled demographic distributions, classifying customers based on age groups, order volumes, and retention indexes.',
-        'Mapped buying frequency trends, suggesting optimal promotional hours that can improve conversions.'
+        'Performed data cleaning, preprocessing, and exploratory data analysis using Jupyter Notebook and Python libraries.',
+        'Used SQL queries for data extraction, filtering, aggregation, and customer segmentation analysis.',
+        'Created interactive Power BI dashboards to visualize customer demographics, sales trends, and buying patterns.',
+        'Generated actionable insights that can help improve customer retention and marketing strategies.'
       ]
     }
   ];

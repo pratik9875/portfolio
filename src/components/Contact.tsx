@@ -25,8 +25,8 @@ export default function Contact() {
   const [isSending, setIsSending] = useState(false);
   const [sendSuccess, setSendSuccess] = useState(false);
 
-  const emailVal = 'pratikhirave01@gmail.com';
-  const phoneVal = '+91 9503433104';
+  const emailVal = 'pratikhirave59@gmail.com';
+  const phoneVal = '+91 9881430109';
 
   const copyEmail = () => {
     navigator.clipboard.writeText(emailVal);
@@ -40,20 +40,43 @@ export default function Contact() {
     setTimeout(() => setCopiedPhone(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
 
     setIsSending(true);
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "7b9be00f-2f19-48e8-908d-b755c3f59bd8",
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+        }),
+      });
+      
+      const result = await response.json();
+      if (result.success) {
+        setSendSuccess(true);
+        setName('');
+        setEmail('');
+        setMessage('');
+        setTimeout(() => setSendSuccess(false), 5000);
+      } else {
+        console.error("Form submission error:", result);
+      }
+    } catch (error) {
+      console.error("Failed to submit form:", error);
+    } finally {
       setIsSending(false);
-      setSendSuccess(true);
-      // reset form
-      setName('');
-      setEmail('');
-      setMessage('');
-      setTimeout(() => setSendSuccess(false), 5000);
-    }, 1500);
+    }
   };
 
   return (

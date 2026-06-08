@@ -12,8 +12,8 @@ export default function About() {
   const profileDetails = [
     { icon: <User className="w-5 h-5 text-orange-500" />, label: 'Role', value: 'Entry-Level Data Analyst / BI Analyst' },
     { icon: <MapPin className="w-5 h-5 text-rose-500" />, label: 'Location', value: 'Pune, Maharashtra, India' },
-    { icon: <Mail className="w-5 h-5 text-amber-500" />, label: 'Email', value: 'pratikhirave01@gmail.com' },
-    { icon: <Phone className="w-5 h-5 text-emerald-500" />, label: 'Phone', value: '+91 9503433104' },
+    { icon: <Mail className="w-5 h-5 text-amber-500" />, label: 'Email', value: 'pratikhirave59@gmail.com' },
+    { icon: <Phone className="w-5 h-5 text-emerald-500" />, label: 'Phone', value: '+91 9881430109' },
   ];
 
   const softSkills = [
